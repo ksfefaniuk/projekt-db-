@@ -141,7 +141,8 @@ CREATE TABLE Serwisowanie (
     u_id1          NOT NULL
                    REFERENCES Urzadzenie (u_id),
     us_id1         REFERENCES Uzytkownik (us_id) 
-                   NOT NULL
+                   NOT NULL,
+                   UNIQUE (u_id1, us_id1)
 );
 
 INSERT INTO Serwisowanie (
