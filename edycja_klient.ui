@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Edycja_klient</class>
+ <widget class="QDialog" name="Edycja_klient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>738</width>
+    <height>402</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableView" name="tableView3">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>40</y>
+     <width>511</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>135</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pokaż tabelę</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="k_id_label">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>250</y>
+     <width>16</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Id</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>310</y>
+     <width>239</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="text">
+       <string>Edytuj...</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="text">
+       <string>Dodaj</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="text">
+       <string>Usuń</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>135</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QLabel" name="label_IDa_2">
+      <property name="text">
+       <string>Imie</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="k_name">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;W celu łatwiejszego usuwania&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_IMIEa_2">
+      <property name="text">
+       <string>Nazwisko</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="k_surname">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wpisz imię&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_NAZWISKOa_2">
+      <property name="text">
+       <string>Telefon</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="k_tel">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wpisz nazwisko&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_DATAa_2">
+      <property name="text">
+       <string>E-mail</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="k_mail">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Data ostatniego serwisu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_DATAa_3">
+      <property name="text">
+       <string>Adres</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="k_adres">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Data ostatniego serwisu&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>label_IDa_2</zorder>
+   <zorder>label_NAZWISKOa_2</zorder>
+  </widget>
+  <zorder>k_id_label</zorder>
+  <zorder>label_IMIEa_2</zorder>
+  <zorder>k_tel</zorder>
+  <zorder>label_IDa_2</zorder>
+  <zorder>k_mail</zorder>
+  <zorder>label_NAZWISKOa_2</zorder>
+  <zorder>label_DATAa_2</zorder>
+  <zorder>k_name</zorder>
+  <zorder>k_surname</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>k_adres</zorder>
+  <zorder>label_DATAa_3</zorder>
+  <zorder>pushButton_5</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>k_adres</zorder>
+  <zorder>label_IDa_2</zorder>
+  <zorder>k_name</zorder>
+  <zorder>k_mail</zorder>
+  <zorder>label_DATAa_3</zorder>
+  <zorder>k_tel</zorder>
+  <zorder>label_IMIEa_2</zorder>
+  <zorder>label_NAZWISKOa_2</zorder>
+  <zorder>label_DATAa_2</zorder>
+  <zorder>k_surname</zorder>
+  <zorder>tableView3</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>k_name</tabstop>
+  <tabstop>k_surname</tabstop>
+  <tabstop>k_tel</tabstop>
+  <tabstop>k_mail</tabstop>
+  <tabstop>k_adres</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>tableView3</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>pushButton_Usun</tabstop>
+  <tabstop>pushButton_Edytuj</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>baza_DATA</tabstop>
+  <tabstop>baza_NAZWISKO</tabstop>
+  <tabstop>baza_IMIE</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>baza_IDa</tabstop>
+  <tabstop>pushButton_LOAD_5</tabstop>
+  <tabstop>pushButton_LOAD_6</tabstop>
+  <tabstop>pushButton_LOAD_7</tabstop>
+  <tabstop>pushButton_LOAD_8</tabstop>
+  <tabstop>pushButton_LOAD</tabstop>
+  <tabstop>pushButton_LOAD_2</tabstop>
+  <tabstop>pushButton_LOAD_3</tabstop>
+  <tabstop>pushButton_LOAD_4</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

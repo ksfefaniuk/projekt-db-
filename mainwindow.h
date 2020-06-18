@@ -1,36 +1,36 @@
+#pragma once
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
 #include <QMainWindow>
 #include <QtSql>
-#include <QtDebug>
+#include <QDebug>
 #include <QFileInfo>
-#include "zalogowany.h"
+#include"zalogowany.h"
 
-QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
-QT_END_NAMESPACE
+
+
+namespace Ui {
+class MainWindow;
+}
 
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
     QSqlDatabase servi;
-
-    void Zamknij()                     //zamykanie polaczenia z baza danych
+    void Zamknij()                     //zamykanie polaczenia z servi danych
     {
         servi.close();
         servi.removeDatabase(QSqlDatabase::defaultConnection);
     }
 
 
-    bool Otworz()                 //otwieranie polaczenia z baza danych
+    bool Otworz()                 //otwieranie polaczenia z servi danych
     {
         servi=QSqlDatabase::addDatabase("QSQLITE");
-        servi.setDatabaseName("C:/Qt/projekty/projekt/project_v.sql");
+        servi.setDatabaseName("C:/Qt/projekty/db-project/baza2.db");;
         if(!servi.open())
         {
             qDebug()<<("Błąd otwierania!");
@@ -40,18 +40,17 @@ public:
             qDebug()<<("Połączono!");
             return true;
     }
+
+    explicit MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
+
 private slots:
     void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;
 };
+
 #endif // MAINWINDOW_H
-
-
-
-
-
-
-
-
