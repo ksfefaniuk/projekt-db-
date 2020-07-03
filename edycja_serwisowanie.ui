@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>edycja_urzadzenie</class>
- <widget class="QDialog" name="edycja_urzadzenie">
+ <class>edycja_serwisowanie</class>
+ <widget class="QDialog" name="edycja_serwisowanie">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>779</width>
-    <height>445</height>
+    <width>1162</width>
+    <height>559</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,48 +16,22 @@
   <property name="styleSheet">
    <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
-  <widget class="QTableView" name="tableView4">
+  <widget class="QTableView" name="tableView3">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>20</y>
-     <width>331</width>
-     <height>311</height>
+     <x>540</x>
+     <y>100</y>
+     <width>511</width>
+     <height>261</height>
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>350</y>
-     <width>81</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Załaduj tabelę</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="id_load">
-   <property name="geometry">
-    <rect>
-     <x>420</x>
-     <y>270</y>
-     <width>133</width>
-     <height>16</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>ID Klienta</string>
-   </property>
-  </widget>
-  <widget class="QWidget" name="">
-   <property name="geometry">
-    <rect>
-     <x>210</x>
+     <x>300</x>
      <y>110</y>
-     <width>154</width>
+     <width>181</width>
      <height>223</height>
     </rect>
    </property>
@@ -67,7 +41,7 @@
       <item>
        <widget class="QPushButton" name="pushButton_5">
         <property name="text">
-         <string>Edytuj ID</string>
+         <string>Wybierz serwisanta</string>
         </property>
        </widget>
       </item>
@@ -127,19 +101,47 @@
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>383</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Załaduj tabelę</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="id_load">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>300</y>
+     <width>133</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ID LOAD</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableView4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>231</width>
+     <height>451</height>
+    </rect>
+   </property>
+  </widget>
+  <zorder>layoutWidget</zorder>
   <zorder>pushButton</zorder>
-  <zorder>u_model</zorder>
-  <zorder>label_IMIEa_2</zorder>
-  <zorder>label_NAZWISKOa_2</zorder>
-  <zorder>u_marka</zorder>
-  <zorder>pushButton_2</zorder>
-  <zorder>pushButton_3</zorder>
-  <zorder>k_id1</zorder>
-  <zorder>combo1</zorder>
   <zorder>id_load</zorder>
   <zorder>tableView4</zorder>
-  <zorder>pushButton_4</zorder>
-  <zorder>pushButton_5</zorder>
+  <zorder>tableView3</zorder>
  </widget>
  <resources/>
  <connections/>

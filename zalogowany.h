@@ -36,6 +36,12 @@ private slots:
 
     void on_pushButton_LOAD_6_clicked();
 
+
+
+    void on_pushButton_LOAD_7_clicked();
+
+    void on_pushButton_LOAD_8_clicked();
+
 private:
     Ui::Zalogowany *ui;
 };

@@ -24,6 +24,14 @@ private slots:
 
     void on_tableView4_activated(const QModelIndex &index);
 
+
+    void on_pushButton_4_clicked();
+
+
+    void on_pushButton_5_clicked();
+
+
+
 private:
     Ui::edycja_urzadzenie *ui;
 };

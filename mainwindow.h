@@ -30,7 +30,7 @@ public:
     bool Otworz()                 //otwieranie polaczenia z servi danych
     {
         servi=QSqlDatabase::addDatabase("QSQLITE");
-        servi.setDatabaseName("C:/Qt/projekty/db-project/baza2.db");;
+        servi.setDatabaseName("C:/Qt/projekty/db-project/baza.db");;
         if(!servi.open())
         {
             qDebug()<<("Błąd otwierania!");

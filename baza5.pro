@@ -26,6 +26,8 @@ CONFIG += c++11
 
 SOURCES += \
         edycja_klient.cpp \
+        edycja_naprawa.cpp \
+        edycja_serwisowanie.cpp \
         edycja_urzadzenie.cpp \
         main.cpp \
         mainwindow.cpp \
@@ -34,6 +36,8 @@ SOURCES += \
 
 HEADERS += \
     edycja_klient.h \
+    edycja_naprawa.h \
+    edycja_serwisowanie.h \
     edycja_urzadzenie.h \
         mainwindow.h \
     rejestracja.h \
@@ -41,6 +45,8 @@ HEADERS += \
 
 FORMS += \
     edycja_klient.ui \
+    edycja_naprawa.ui \
+    edycja_serwisowanie.ui \
     edycja_urzadzenie.ui \
         mainwindow.ui \
     rejestracja.ui \

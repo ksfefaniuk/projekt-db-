@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>481</width>
+    <width>552</width>
     <height>291</height>
    </rect>
   </property>
@@ -47,7 +47,7 @@
     <rect>
      <x>260</x>
      <y>0</y>
-     <width>131</width>
+     <width>261</width>
      <height>251</height>
     </rect>
    </property>
@@ -65,7 +65,7 @@
     <string>Sprawdz</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>40</x>
@@ -124,7 +124,11 @@
        <widget class="QLineEdit" name="lineEdit_name"/>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_pass"/>
+       <widget class="QLineEdit" name="lineEdit_pass">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QLineEdit" name="lineEdit_mail"/>
@@ -133,6 +137,39 @@
     </item>
    </layout>
   </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>140</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Edytuj...</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="us_id">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>190</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>o</string>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>pushButton_3</zorder>
+  <zorder>us_id</zorder>
+  <zorder>tableView2</zorder>
  </widget>
  <resources/>
  <connections/>

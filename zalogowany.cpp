@@ -8,6 +8,9 @@
 #include "ui_edycja_klient.h"
 #include "edycja_urzadzenie.h"
 #include "ui_edycja_urzadzenie.h"
+#include "edycja_serwisowanie.h"
+#include "edycja_naprawa.h"
+#include "edycja_klient.h"
 
 
 
@@ -26,8 +29,9 @@ Zalogowany::~Zalogowany()
     delete ui;
 }
 
-void Zalogowany::on_pushButton_3_clicked()         //otwieranie folderu ze zdjeciami
+void Zalogowany::on_pushButton_3_clicked()         //otwieranie folderu ze zdjeciami NIEAKTYWNE
 {
+    /*
     MainWindow Lacznik;
     Lacznik.Otworz();
 
@@ -42,12 +46,13 @@ void Zalogowany::on_pushButton_3_clicked()         //otwieranie folderu ze zdjec
     }
 
     Lacznik.Zamknij();
-
+*/
 }
 
 
-void Zalogowany::on_pushButton_4_clicked()         //odpowiada za wlaczenie apki kalendarza
+void Zalogowany::on_pushButton_4_clicked()         //odpowiada za wlaczenie apki kalendarza NIEAKTYWNE
 {
+    /*
 
     MainWindow Lacznik;
     Lacznik.Otworz();
@@ -59,7 +64,7 @@ void Zalogowany::on_pushButton_4_clicked()         //odpowiada za wlaczenie apki
         qDebug()<< " Started the process"<<endl;
 
     Lacznik.Zamknij();
-
+*/
 }
 
 
@@ -72,7 +77,7 @@ void Zalogowany::on_pushButton_LOAD_clicked() //LADUJE AKTUALNA BAZE DO PROGRAMU
     Lacznik.Otworz();
     QSqlQuery* query=new QSqlQuery(Lacznik.servi);
 
-    query->prepare("select imie,nazwisko,telefon,k_mail,adres from klient");
+    query->prepare("select k_id,imie,nazwisko,telefon,k_mail,adres from klient");
     query->exec();
     modal->setQuery(*query);
     ui->tableView->setModel(modal);
@@ -90,7 +95,7 @@ void Zalogowany::on_pushButton_LOAD_2_clicked()             //POKAZUJE TABELE UR
     Lacznik.Otworz();
     QSqlQuery* query=new QSqlQuery(Lacznik.servi);
 
-    query->prepare("select marka,model from urzadzenie order by marka");
+    query->prepare("select distinct imie,nazwisko,marka,model from urzadzenie join klient on k_id1=k_id order by marka");
     query->exec();
     modal->setQuery(*query);
     ui->tableView->setModel(modal);
@@ -122,7 +127,7 @@ void Zalogowany::on_pushButton_LOAD_4_clicked()                  //POKAZUJE TABE
     Lacznik.Otworz();
     QSqlQuery* query=new QSqlQuery(Lacznik.servi);
 
-    query->prepare("select u_name,marka,model from naprawa join uzytkownik on us_id2=us_id join urzadzenie on u_id2=u_id order by u_name;");
+    query->prepare("select u_name,marka,model from naprawa left join uzytkownik on us_id2=us_id left join urzadzenie on u_id2=u_id order by u_name;");
     query->exec();
     modal->setQuery(*query);
     ui->tableView->setModel(modal);
@@ -140,9 +145,26 @@ void Zalogowany::on_pushButton_LOAD_5_clicked()            //OTWIERA OKNO EDYCJI
 }
 
 
-void Zalogowany::on_pushButton_LOAD_6_clicked()
+void Zalogowany::on_pushButton_LOAD_6_clicked()  //OTWIERA OKNO EDYCJI URZADZEN
 {
     edycja_urzadzenie edycja1;
     edycja1.setModal(true);
     edycja1.exec();
+}
+
+
+
+
+void Zalogowany::on_pushButton_LOAD_7_clicked()    //OTWIERA OKNO EDYCJI serwisow
+{
+    edycja_naprawa edycja2;
+    edycja2.setModal(true);
+    edycja2.exec();
+}
+
+void Zalogowany::on_pushButton_LOAD_8_clicked()
+{
+    edycja_serwisowanie edycja3;
+    edycja3.setModal(true);
+    edycja3.exec();
 }

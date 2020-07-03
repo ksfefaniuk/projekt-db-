@@ -6,6 +6,11 @@
 #include "rejestracja.h"
 #include "edycja_urzadzenie.h"
 #include "ui_edycja_urzadzenie.h"
+#include "edycja_naprawa.h"
+#include "ui_edycja_naprawa.h"
+#include "edycja_serwisowanie.h"
+#include "edycja_naprawa.h"
+#include "edycja_klient.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
